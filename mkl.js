@@ -9,7 +9,7 @@ class MerkleTree {
   hash(data) {
     return crypto.createHash('sha256').update(data).digest();
   }
-
+//
   buildTree(leaves) {
     let levels = [leaves];
     while (levels[0].length > 1) {
